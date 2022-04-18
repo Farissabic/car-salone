@@ -1,0 +1,37 @@
+
+section{
+    padding: 0 0 10rem 0;
+    background:  #f5b903;
+}
+
+.featured-section{
+    padding: 0 10rem 10rem 10rem;
+    background:  #f5b903;
+}
+
+.New-row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    justify-content: center;
+}
+
+.Arriving-row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+
+
+@media screen and (max-width:1100px){
+    .Arriving-row{
+        grid-template-columns: auto;
+    }
+
+    .New-row{
+        grid-template-columns: auto;
+    }
+}

@@ -1,0 +1,60 @@
+nav{
+    margin-top: 6rem;
+    background:#272626;
+    height: 5rem;
+    z-index: 1;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: 300ms ease;
+}
+
+a{
+    color: #F5B903;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    transition: 300ms ease;
+}
+
+.car-manu{
+    display: none;
+}
+
+
+@media screen and (max-width:700px){
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        overflow: hidden;
+        margin-top: 2rem;
+    }
+
+    .car-manu{
+        margin-top: 1.5rem;
+        display: block;
+    }
+   
+}

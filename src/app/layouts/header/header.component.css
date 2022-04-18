@@ -1,0 +1,41 @@
+
+
+header{
+    height: 6rem;
+    width: 100%;
+    background:white;
+}
+
+.site-logo{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-family: 'Square Peg', cursive;
+    font-weight: bolder;
+}
+
+.site-logo i{
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: black;
+}
+
+ul{
+    background: white;
+    text-align: center;
+}
+
+ul li{
+    padding: 1rem;
+    transition: 300ms ease;
+}
+
+ul li:hover{
+   background: #F5B903;
+}
+
+ul li:hover a{
+    color: white;
+}

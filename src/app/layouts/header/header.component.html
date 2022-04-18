@@ -1,0 +1,22 @@
+<header  class="navbar navbar-expand-lg fixed-top bg-white">
+    <div class="container">
+        <a routerLink="/" class="site-logo">Car Salone <i class="fa-solid fa-truck-pickup"></i></a>
+        <button class="navbar-toggler" type="button" (click)="open()">
+            &#9776;
+        </button>
+       
+        <div class="collapse navbar-collapse" #collapse>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" routerLink="/about" >About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/contact" >Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://car-salone.web.app/" >Admin</a>
+              </li>
+            </ul>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,27 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center mt-5">
+                <h2 class="text-white">The New Vehicles</h2>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum voluptatibus labore velit modi est nemo non necessitatibus possimus! Tempora fuga veritatis quidem repudiandae officia odio dignissimos laudantium vel, alias enim!</p>
+            </div>
+        </div>
+        <div class="New-row">
+            <div *ngFor="let post of postsN, let i = index">
+                <app-post-card *ngIf="i<=3"  [postData]="post"></app-post-card>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container mt-5">
+    <div class="col-md-12 text-center">
+        <h2>Arriving Vehicles</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime libero accusamus ex ipsa, sint hic suscipit laborum itaque optio, quibusdam maiores? Iure, natus incidunt. Nobis totam aut quasi velit perferendis!</p>
+    </div>
+    <div class="Arriving-row" >
+        <div *ngFor="let post of postsA, let i = index">
+            <app-post-card [postData]="post"></app-post-card>
+        </div>
+    </div>
+</div>

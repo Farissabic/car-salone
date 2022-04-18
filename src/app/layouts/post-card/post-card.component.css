@@ -1,0 +1,11 @@
+.card{
+    max-width: 20rem;
+    border: none;
+    box-shadow: 0 0 2rem rgba(64, 65, 63, 0.3) ;
+}
+.card-body h5{
+    margin-bottom: 1.5rem;
+}
+.card-body p{
+    line-height: 0;
+}

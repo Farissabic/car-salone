@@ -1,0 +1,10 @@
+
+
+<nav #cars>
+    <div class="container">
+        <a (click)="open()" class="car-manu">CARS <i class="fa-solid fa-angles-down"></i></a>
+            <ul>
+                <li *ngFor="let category of categories"><a [routerLink]="['/category',category.data.category,category.id]">{{category.data.category}}</a></li>
+            </ul>
+    </div>
+</nav>

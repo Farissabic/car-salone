@@ -1,0 +1,9 @@
+<div [routerLink]="['/post',postD.id]" class="card" *ngIf="postData">
+    <img class="card-img-top" src="{{postD.data.picturePath}}" alt="">
+    <div class="card-body">
+        <h5 class="mt-1">{{postD.data.name}}</h5>
+        <p>Price: <span>{{postD.data.value}}</span></p>
+        <p>Year: <span>{{postD.data.yare}}</span></p>
+        <p>Mileage: <span>{{postD.data.mileage}}</span></p>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+.container{
+    padding: 4rem;
+}
+
+.row{
+    margin-bottom: 2rem;
+}
+
+.card{
+    margin-bottom: 2rem;
+}
+
+p{
+    padding: 1rem;
+    border-radius: 20px;
+    background: #272626d0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    transition: 300ms ease;
+}
+
+p:hover{
+    background: #272626;
+}
+
+h3{
+    width: 100%;
+    padding: 1rem;
+    background:rgb(245, 186, 3);
+    color: rgb(255, 255, 255)
+}
+
+.txt-area p{
+    background:rgb(245, 186, 3);
+    color: rgb(255, 255, 255);
+    border-radius: 0;
+}
+
+.cars{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    margin: 1rem 0 1rem;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:1100px){
+    .cars{
+        grid-template-columns: auto;
+    }
+}

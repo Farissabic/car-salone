@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row">
+        <div class="txt-area">
+            <h3>{{post.name}}</h3>
+        </div> 
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <img src="{{post.picturePath}}" alt="">
+            </div>
+            <div class="txt-area">
+                <p>FEATURES : </p>
+                <p>{{post.features}}</p>
+            </div> 
+          
+        </div>
+        <div class="col-md-6">
+            <p>VALUE : <span>{{post.value}} KM</span></p>
+            <p>YEAR : <span>{{post.yare}}</span></p>
+            <p>POWER : <span>{{post.power}}</span></p>
+            <p>MILEAGE : <span>{{post.mileage}}</span></p>
+            <p>GEARBOX : <span>{{post.gearbox}}</span></p>
+            <p>FUEL : <span>{{post.fuel}}</span></p>
+            <p>COLOR : <span>{{post.color}}</span></p>
+            <p>DOOR COUNT : <span>{{post.doorCount}}</span></p>
+            <p>EMISSION CLASS : <span>{{post.emissionClass}}</span></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="txt-area">
+                <p>DESCRIPTION : </p>
+                <p>{{post.description}}</p>
+            </div> 
+          </div>
+    </div>
+    <div>
+        <h3>Similar cars : </h3>
+        <div class="cars">
+            <div *ngFor="let Spost of SPosts">
+                <app-post-card [postData]="Spost"></app-post-card>
+            </div>
+        </div>
+    </div>
+</div>
